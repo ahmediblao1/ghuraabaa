@@ -95,7 +95,7 @@ const Home = () => {
           
           <div className="mt-12">
             <a
-              href="https://wa.me/1234567890?text=مرحباً، أرغب في الانضمام كعضو في جمعية غرباء"
+              href="https://wa.me/905550208605?text=مرحباً، أرغب في الانضمام كعضو في جمعية غرباء"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-3 space-x-reverse bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl transition-all duration-300 charity-button arabic-text"
@@ -349,14 +349,14 @@ const Home = () => {
               </Button>
             </Link>
             <a
-              href="https://wa.me/1234567890?text=مرحباً، أرغب في التطوع مع جمعية غرباء"
+              href="https://wa.me/905550208605?text=مرحباً، أرغب في التطوع مع جمعية غرباء"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl transition-all duration-300 charity-button text-xl min-w-[200px] inline-flex items-center justify-center"
             >
               <i className="fab fa-whatsapp ml-2"></i>
               تطوع معنا
-            </a>
+            </a>905550208605?
           </div>
         </div>
       </section>

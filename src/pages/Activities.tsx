@@ -249,7 +249,7 @@ const Activities = () => {
               <span className="arabic-text">تبرع الآن</span>
             </a>
             <a
-              href="https://wa.me/1234567890?text=مرحباً، أرغب في التطوع في المشاريع"
+              href="https://wa.me/905550208605?text=مرحباً، أرغب في التطوع في المشاريع"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-3 space-x-reverse bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl transition-all duration-300 charity-button font-semibold"
