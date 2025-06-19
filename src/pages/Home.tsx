@@ -42,7 +42,7 @@ const Home = () => {
     },
     {
       name: 'أحمد الفلسطيني',
-      text: 'الجمعية تقوم بعمل رائع ومنظم، نشعر بالأمان والاطمئنان عندما نتعامل معهم',
+      text: 'المجموعة تقوم بعمل رائع ومنظم، نشعر بالأمان والاطمئنان عندما نتعامل معهم',
       location: 'غزة'
     },
     {
@@ -67,7 +67,7 @@ const Home = () => {
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold arabic-heading mb-6 animate-fade-in">
-            جمعية غرباء
+            مجموعة غرباء
           </h1>
           <h2 className="text-2xl md:text-4xl arabic-heading mb-8 animate-fade-in">
             للأعمال الخيرية
@@ -79,12 +79,12 @@ const Home = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
-            <Link to="/donate">
+            {/* <Link to="/donate">
               <Button className="charity-button-primary text-xl px-8 py-4 min-w-[200px]">
                 <i className="fas fa-hand-holding-heart ml-2"></i>
                 تبرع الآن
               </Button>
-            </Link>
+            </Link> */}
             <Link to="/activities">
               <Button className="charity-button-secondary text-xl px-8 py-4 min-w-[200px]">
                 <i className="fas fa-eye ml-2"></i>
@@ -95,7 +95,7 @@ const Home = () => {
           
           <div className="mt-12">
             <a
-              href="https://wa.me/905550208605?text=مرحباً، أرغب في الانضمام كعضو في جمعية غرباء"
+              href="https://wa.me/905550208605?text=مرحباً، أرغب في الانضمام كعضو في مجموعة غرباء"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-3 space-x-reverse bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl transition-all duration-300 charity-button arabic-text"
@@ -118,11 +118,71 @@ const Home = () => {
           <h2 className="text-4xl md:text-5xl font-bold arabic-heading text-primary mb-8">
             رسالتنا
           </h2>
-          <p className="text-xl arabic-text leading-relaxed text-gray-700 mb-8">
-            نحن في جمعية غرباء نؤمن بأن التكافل الاجتماعي والوقوف مع المحتاجين هو واجب على كل مسلم. 
-            نسعى لتقديم المساعدة الإنسانية لأهل غزة المحاصرين، ونعمل على توفير احتياجاتهم الأساسية 
-            من طعام وكساء ودواء، ونقدم الدعم النفسي والمعنوي لهم في محنتهم.
-          </p>
+          <div className="text-xl arabic-text leading-relaxed text-gray-700 mb-8">
+  {/* Title Section */}
+  <div className="text-2xl font-bold text-blue-800 mb-6 text-center border-b-2 border-blue-200 pb-4">
+    مجموعة: فطوبى للغرباء
+  </div>
+
+  {/* Introduction */}
+  <div className="bg-blue-50 p-6 rounded-lg mb-6 border-r-4 border-blue-500">
+    <p className="text-lg leading-relaxed mb-4">
+      فكرة هذا المشروع المبارك أن يكون هناك تمويل قليل ودائم، يساهم فيه كل شخص بمبلغ بسيط يوميًا
+    </p>
+  </div>
+
+  {/* Goals Section */}
+  <div className="space-y-4 mb-8">
+    <div className="bg-green-50 p-4 rounded-lg border-r-4 border-green-500">
+      <span className="text-lg">💰 المساهمة اليومية: دولار واحد فقط (ما يعادل 30 دولار شهريًا)</span>
+    </div>
+    
+    <div className="bg-yellow-50 p-4 rounded-lg border-r-4 border-yellow-500">
+      <span className="text-lg">🎯 الهدف: الوصول إلى ألف مشترك بعون الله تعالى</span>
+    </div>
+    
+    <div className="bg-purple-50 p-4 rounded-lg border-r-4 border-purple-500">
+      <span className="text-lg">✨ المجموع المتوقع: 30 ألف دولار شهريًا</span>
+    </div>
+  </div>
+
+  {/* Prayer */}
+  <div className="text-center bg-gray-50 p-4 rounded-lg mb-8">
+    <p className="text-lg text-gray-600 italic">
+      نسأل الله التوفيق والسداد في بلوغ هذا الهدف
+    </p>
+  </div>
+
+  {/* Success Secrets Title */}
+  <div className="text-center mb-6">
+    <h3 className="text-2xl font-bold text-orange-600 bg-orange-50 p-4 rounded-lg">
+      أسرار النجاح الحقيقي في الدنيا والآخرة
+    </h3>
+  </div>
+
+  {/* Divider */}
+  <hr className="my-8 border-t-3 border-gradient-to-r from-blue-500 to-purple-500" />
+
+  {/* Quran Verses */}
+  <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg text-center shadow-lg">
+    <div className="text-2xl leading-loose font-medium">
+      <p className="mb-4">
+        يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ هَلۡ أَدُلُّكُمۡ عَلَىٰ تِجَٰرَةٖ تُنجِيكُم مِّنۡ عَذَابٍ أَلِيمٖ 
+        <span className="inline-block bg-white bg-opacity-20 rounded-full w-8 h-8 leading-8 text-sm mx-2">(10)</span>
+      </p>
+      
+      <p className="mb-4">
+        تُؤۡمِنُونَ بِٱللَّهِ وَرَسُولِهِۦ وَتُجَٰهِدُونَ فِي سَبِيلِ ٱللَّهِ بِأَمۡوَٰلِكُمۡ وَأَنفُسِكُمۡۚ ذَٰلِكُمۡ خَيۡرٞ لَّكُمۡ إِن كُنتُمۡ تَعۡلَمُونَ 
+        <span className="inline-block bg-white bg-opacity-20 rounded-full w-8 h-8 leading-8 text-sm mx-2">(11)</span>
+      </p>
+      
+      <p>
+        يَغۡفِرۡ لَكُمۡ ذُنُوبَكُمۡ وَيُدۡخِلۡكُمۡ جَنَّٰتٖ تَجۡرِي مِن تَحۡتِهَا ٱلۡأَنۡهَٰرُ وَمَسَٰكِنَ طَيِّبَةٗ فِي جَنَّٰتِ عَدۡنٖۚ ذَٰلِكَ ٱلۡفَوۡزُ ٱلۡعَظِيمُ
+        <span className="inline-block bg-white bg-opacity-20 rounded-full w-8 h-8 leading-8 text-sm mx-2">(12)</span>
+      </p>
+    </div>
+  </div>
+</div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <Card className="charity-card text-center p-6">
               <CardContent className="pt-6">
@@ -177,7 +237,7 @@ const Home = () => {
                   className="w-full h-full"
                   allow="autoplay"
                   allowFullScreen
-                  title="فيديو جمعية غرباء للأعمال الخيرية"
+                  title="فيديو مجموعة غرباء للأعمال الخيرية"
                 ></iframe>
               </div>
               
@@ -349,7 +409,7 @@ const Home = () => {
               </Button>
             </Link>
             <a
-              href="https://wa.me/905550208605?text=مرحباً، أرغب في التطوع مع جمعية غرباء"
+              href="https://wa.me/905550208605?text=مرحباً، أرغب في التطوع مع مجموعة غرباء"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl transition-all duration-300 charity-button text-xl min-w-[200px] inline-flex items-center justify-center"

@@ -31,7 +31,7 @@ const Layout = ({ children }: LayoutProps) => {
             <Link to="/" className="flex items-center space-x-3 space-x-reverse">
               <img src="/images/wh.jpg" alt="Logo" className="w-28 h-16" />
               <div className="arabic-heading">
-                <h1 className="text-xl font-bold text-primary">جمعية غرباء</h1>
+                <h1 className="text-xl font-bold text-primary">مجموعة غرباء</h1>
                 <p className="text-xs text-gray-600">للأعمال الخيرية</p>
               </div>
             </Link>
@@ -56,7 +56,7 @@ const Layout = ({ children }: LayoutProps) => {
 
             {/* WhatsApp Button */}
             <a
-              href="https://wa.me/905550208605?text=مرحباً، أرغب في معرفة المزيد عن جمعية غرباء"
+              href="https://wa.me/905550208605?text=مرحباً، أرغب في معرفة المزيد عن مجموعة غرباء"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:flex items-center space-x-2 space-x-reverse bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-all duration-300 charity-button"
@@ -96,7 +96,7 @@ const Layout = ({ children }: LayoutProps) => {
                   </Link>
                 ))}
                 <a
-                  href="https://wa.me/905550208605?text=مرحباً، أرغب في معرفة المزيد عن جمعية غرباء"
+                  href="https://wa.me/905550208605?text=مرحباً، أرغب في معرفة المزيد عن مجموعة غرباء"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 space-x-reverse bg-green-500 text-white px-4 py-3 rounded-lg hover:bg-green-600 transition-all duration-300 mt-2"
@@ -125,7 +125,7 @@ const Layout = ({ children }: LayoutProps) => {
                 <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
                   <i className="fas fa-mosque text-white text-sm"></i>
                 </div>
-                <h3 className="text-xl font-bold arabic-heading">جمعية غرباء للأعمال الخيرية</h3>
+                <h3 className="text-xl font-bold arabic-heading">مجموعة غرباء للأعمال الخيرية</h3>
               </div>
               <p className="arabic-text text-gray-300 leading-relaxed mb-4">
                 منظمة خيرية تهدف إلى دعم ومساعدة أهل غزة في محنتهم، من خلال تقديم المساعدات الإنسانية والدعم المعنوي والمادي للأسر المحتاجة.
@@ -181,7 +181,7 @@ const Layout = ({ children }: LayoutProps) => {
           </div>
 
           <div className="border-t border-gray-700 mt-8 pt-8 text-center arabic-text text-gray-400">
-            <p>&copy; 2025 جمعية غرباء للأعمال الخيرية. جميع الحقوق محفوظة.</p>
+            <p>&copy; 2025 مجموعة غرباء للأعمال الخيرية. جميع الحقوق محفوظة.</p>
           </div>
         </div>
       </footer>

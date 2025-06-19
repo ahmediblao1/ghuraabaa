@@ -81,7 +81,7 @@ const Members = () => {
           الأعضاء والمساهمين
         </h1>
         <p className="text-xl arabic-text text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          قائمة بجميع أعضاء الجمعية والمساهمين في أعمالنا الخيرية منذ اليوم الأول ولله الحمد
+          قائمة بجميع أعضاء المجموعة والمساهمين في أعمالنا الخيرية منذ اليوم الأول ولله الحمد
         </p>
       </div>
 
@@ -225,13 +225,13 @@ const Members = () => {
       <Card className="charity-card bg-gradient-to-r from-primary to-accent text-white">
         <CardContent className="p-8 text-center">
           <h3 className="text-2xl md:text-3xl font-bold arabic-heading mb-4">
-            انضم إلى أسرة جمعية غرباء
+            انضم إلى أسرة مجموعة غرباء
           </h3>
           <p className="text-xl arabic-text mb-6 opacity-90">
             كن جزءاً من عائلتنا الكبيرة وساهم في دعم أهل غزة
           </p>
           <a
-            href="https://wa.me/905550208605?text=مرحباً، أرغب في الانضمام كعضو جديد في جمعية غرباء"
+            href="https://wa.me/905550208605?text=مرحباً، أرغب في الانضمام كعضو جديد في مجموعة غرباء"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-3 space-x-reverse bg-white text-primary px-8 py-4 rounded-xl hover:bg-gray-100 transition-all duration-300 charity-button font-semibold"

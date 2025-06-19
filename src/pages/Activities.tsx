@@ -182,7 +182,7 @@ const Activities = () => {
                         className="w-full h-full"
                         allow="autoplay"
                         allowFullScreen
-                        title="فيديو جمعية غرباء للأعمال الخيرية"
+                        title="فيديو مجموعة غرباء للأعمال الخيرية"
                       ></iframe>
                     </div>
                     

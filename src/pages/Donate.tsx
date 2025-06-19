@@ -63,7 +63,7 @@ const Donate = () => {
       const donationType = formData.isMonthly ? 'شهري' : 'مرة واحدة';
       
       // Create WhatsApp message
-      const whatsappMessage = `🤲 طلب تبرع جديد من جمعية غرباء
+      const whatsappMessage = `🤲 طلب تبرع جديد من مجموعة غرباء
       
 الاسم: ${formData.name}
 الهاتف: ${formData.phone}
@@ -363,7 +363,7 @@ ${formData.message ? `الرسالة: ${formData.message}` : ''}
             </CardHeader>
             <CardContent className="space-y-3">
               <div className="arabic-text">
-                <p className="font-semibold">اسم الحساب: جمعية غرباء للأعمال الخيرية</p>
+                <p className="font-semibold">اسم الحساب: مجموعة غرباء للأعمال الخيرية</p>
                 <p>رقم الحساب: 0400</p>
                 <p>شركة اطلانتس لالالي تركيا </p>
                 <p></p>
@@ -387,7 +387,7 @@ ${formData.message ? `الرسالة: ${formData.message}` : ''}
                 للاستفسار أو المساعدة في عملية التبرع
               </p>
               <a
-                href="https://wa.me/905550208605?text=مرحباً، أرغب في التبرع لجمعية غرباء"
+                href="https://wa.me/905550208605?text=مرحباً، أرغب في التبرع لمجموعة غرباء"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-3 space-x-reverse bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-all duration-300 charity-button"

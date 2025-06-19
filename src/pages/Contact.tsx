@@ -49,7 +49,7 @@ const Contact = () => {
     
     if (validateForm()) {
       // Create WhatsApp message for contact form
-      const whatsappMessage = `📧 رسالة جديدة من موقع جمعية غرباء
+      const whatsappMessage = `📧 رسالة جديدة من موقع مجموعة غرباء
       
 الاسم: ${formData.name}
 البريد الإلكتروني: ${formData.email}
@@ -233,7 +233,7 @@ ${formData.message}`;
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="https://wa.me/905550208605?text=مرحباً، أحتاج مساعدة من جمعية غرباء"
+                  href="https://wa.me/905550208605?text=مرحباً، أحتاج مساعدة من مجموعة غرباء"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 inline-flex items-center justify-center space-x-2 space-x-reverse bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-lg transition-all duration-300 charity-button"
