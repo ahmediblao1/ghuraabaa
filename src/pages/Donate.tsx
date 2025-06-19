@@ -363,9 +363,9 @@ ${formData.message ? `الرسالة: ${formData.message}` : ''}
             </CardHeader>
             <CardContent className="space-y-3">
               <div className="arabic-text">
-                {/* <p className="font-semibold">اسم الحساب: جمعية غرباء للأعمال الخيرية</p> */}
+                <p className="font-semibold">اسم الحساب: جمعية غرباء للأعمال الخيرية</p>
                 <p>رقم الحساب: 0400</p>
-                <p>شركة اطلنتس</p>
+                <p>شركة اطلانتس لالالي تركيا </p>
                 <p></p>
               </div>
               <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
