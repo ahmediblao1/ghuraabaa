@@ -61,7 +61,7 @@ const Members = () => {
     { id: 51, name: 'اصيل دالي', status: 'غير نشط', lastPayment: '15/05/2025' },
     { id: 52, name: 'فاطمه الغربي', status: 'نشط', lastPayment: '21/05/2025' },
     { id: 53, name: 'انس بوكر', status: 'نشط', lastPayment: '22/05/2025' },
-    { id: 54, name: 'مفتاح مصراته', status: 'غير نشط', lastPayment: '18/05/2025' },
+    { id: 54, name: 'مفتاح مصراته', status: 'نشط', lastPayment: '18/05/2025' },
     { id: 55, name: 'علي', status: 'غير نشط', lastPayment: '10/05/2025' },
     { id: 56, name: 'دكتور عدنان', status: 'غير نشط', lastPayment: '26/05/2025' },
   ];
