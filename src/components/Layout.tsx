@@ -29,7 +29,7 @@ const Layout = ({ children }: LayoutProps) => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3 space-x-reverse">
-              <img src="src/components/wh.jpg" alt="Logo" className="w-28 h-16" />
+              <img src="/images/wh.jpg" alt="Logo" className="w-28 h-16" />
               <div className="arabic-heading">
                 <h1 className="text-xl font-bold text-primary">جمعية غرباء</h1>
                 <p className="text-xs text-gray-600">للأعمال الخيرية</p>

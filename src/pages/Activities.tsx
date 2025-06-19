@@ -20,8 +20,8 @@ const Activities = () => {
       description: 'توزيع وجبات إفطار ساخنة للأسر المحتاجة في مخيم جباليا، تضمنت الوجبات الفول والفلافل والخبز والشاي.',
       image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop',
       gallery: [
-        'src/pages/102.jpg',
-        'src/pages/101.jpg',
+        '/images/102.jpg',
+        '/images/101.jpg',
         'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop'
       ]
     },
@@ -37,7 +37,7 @@ const Activities = () => {
       gallery: [
         'https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&h=300&fit=crop',
         'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop',
-        'src/pages/201.jpg',
+        '/images/201.jpg',
       ]
     },
     {
@@ -48,11 +48,11 @@ const Activities = () => {
       location: 'رفح، غزة',
       beneficiaries: 120,
       description: 'توزيع أدوية أساسية للمرضى المزمنين وكبار السن، شملت أدوية السكري والضغط والقلب.',
-      image:'src/pages/302.jpg',
+      image:'/images/302.jpg',
       gallery: [
         'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop',
-        'src/pages/301.jpg',
-        'src/pages/302.jpg',
+        '/images/301.jpg',
+        '/images/302.jpg',
       ]
     },
    

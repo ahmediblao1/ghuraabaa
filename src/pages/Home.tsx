@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   const stats = [
-    { number: '2,500+', label: 'مستفيد', icon: 'fas fa-users' },
+    { number: '550+', label: 'مستفيد', icon: 'fas fa-users' },
     { number: '50+', label: 'عضو نشط', icon: 'fas fa-user-friends' },
-    { number: '10+', label: 'مشروع', icon: 'fas fa-heart' },
+    { number: '5+', label: 'مشروع', icon: 'fas fa-heart' },
     { number: '3', label: 'سنوات خبرة', icon: 'fas fa-calendar' },
   ];
 
