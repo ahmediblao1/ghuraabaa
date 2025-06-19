@@ -22,7 +22,7 @@ const Donate = () => {
 
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  const presetAmounts = [50, 100, 200, 500, 1000];
+  const presetAmounts = [10, 20, 30, 50, 100];
 
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
@@ -68,7 +68,7 @@ const Donate = () => {
 الاسم: ${formData.name}
 الهاتف: ${formData.phone}
 البريد الإلكتروني: ${formData.email}
-مبلغ التبرع: ${amount} ليرة تركية
+مبلغ التبرع: ${amount}دولار 
 نوع التبرع: ${donationType}
 طريقة الدفع: ${getPaymentMethodText(formData.paymentMethod)}
 ${formData.message ? `الرسالة: ${formData.message}` : ''}
@@ -81,7 +81,7 @@ ${formData.message ? `الرسالة: ${formData.message}` : ''}
       
       toast({
         title: "تم إرسال طلب التبرع! 🙏",
-        description: `شكراً ${formData.name} على تبرعك بمبلغ ${amount} ليرة (${donationType}). سيتم التواصل معك قريباً عبر واتساب.`,
+        description: `شكراً ${formData.name} على تبرعك بمبلغ ${amount} دولار (${donationType}). سيتم التواصل معك قريباً عبر واتساب.`,
         duration: 5000,
       });
 
@@ -118,11 +118,11 @@ ${formData.message ? `الرسالة: ${formData.message}` : ''}
 
   const getDonationImpact = () => {
     const amount = parseInt(formData.amount || formData.customAmount) || 0;
-    if (amount >= 1000) return 'يمكن توفير مساعدات لـ 5 أسر لمدة أسبوع';
-    if (amount >= 500) return 'يمكن توفير وجبات ساخنة لـ 25 شخص';
-    if (amount >= 200) return 'يمكن توفير أدوية أساسية لـ 10 أشخاص';
-    if (amount >= 100) return 'يمكن توفير وجبة ساخنة لـ 10 أشخاص';
-    if (amount >= 50) return 'يمكن توفير وجبة ساخنة لـ 5 أشخاص';
+    if (amount >= 100) return 'يمكن توفير مساعدات لـ 1 أسره لمدة أسبوع';
+    if (amount >= 50) return 'يمكن توفير وجبات ساخنة لـ 5 شخص';
+    if (amount >= 30) return 'يمكن توفير أدوية أساسية لـ 3 أشخاص';
+    if (amount >= 20) return 'يمكن توفير وجبة ساخنة لـ 2 أشخاص';
+    if (amount >= 10) return 'يمكن توفير وجبة ساخنة لـ 1 أشخاص';
     return '';
   };
 
@@ -209,13 +209,13 @@ ${formData.message ? `الرسالة: ${formData.message}` : ''}
                       }}
                       className="arabic-text p-3"
                     >
-                      {amount} ₺
+                      {amount} $
                     </Button>
                   ))}
                 </div>
 
                 <div>
-                  <Label htmlFor="customAmount" className="arabic-text">مبلغ آخر (بالليرة التركية)</Label>
+                  <Label htmlFor="customAmount" className="arabic-text">مبلغ آخر (دولار)</Label>
                   <Input
                     id="customAmount"
                     type="number"
@@ -329,8 +329,8 @@ ${formData.message ? `الرسالة: ${formData.message}` : ''}
                   <i className="fas fa-utensils text-green-600 text-sm"></i>
                 </div>
                 <div>
-                  <h4 className="font-semibold arabic-heading text-gray-800">50 ليرة</h4>
-                  <p className="arabic-text text-gray-600 text-sm">وجبة ساخنة لـ 5 أشخاص</p>
+                  <h4 className="font-semibold arabic-heading text-gray-800">10 دولار</h4>
+                  <p className="arabic-text text-gray-600 text-sm">وجبة ساخنة لـ 2 أشخاص</p>
                 </div>
               </div>
               
@@ -339,8 +339,8 @@ ${formData.message ? `الرسالة: ${formData.message}` : ''}
                   <i className="fas fa-pills text-blue-600 text-sm"></i>
                 </div>
                 <div>
-                  <h4 className="font-semibold arabic-heading text-gray-800">200 ليرة</h4>
-                  <p className="arabic-text text-gray-600 text-sm">أدوية أساسية لـ 10 أشخاص</p>
+                  <h4 className="font-semibold arabic-heading text-gray-800">20 دولار</h4>
+                  <p className="arabic-text text-gray-600 text-sm">أدوية أساسية لـ 2 أشخاص</p>
                 </div>
               </div>
               
@@ -349,8 +349,8 @@ ${formData.message ? `الرسالة: ${formData.message}` : ''}
                   <i className="fas fa-home text-orange-600 text-sm"></i>
                 </div>
                 <div>
-                  <h4 className="font-semibold arabic-heading text-gray-800">1000 ليرة</h4>
-                  <p className="arabic-text text-gray-600 text-sm">مساعدة 5 أسر لمدة أسبوع</p>
+                  <h4 className="font-semibold arabic-heading text-gray-800">100 دولار</h4>
+                  <p className="arabic-text text-gray-600 text-sm">مساعدة 1 أسره لمدة أسبوع</p>
                 </div>
               </div>
             </CardContent>
@@ -363,10 +363,10 @@ ${formData.message ? `الرسالة: ${formData.message}` : ''}
             </CardHeader>
             <CardContent className="space-y-3">
               <div className="arabic-text">
-                <p className="font-semibold">اسم الحساب: جمعية غرباء للأعمال الخيرية</p>
-                <p>رقم الحساب: 123456789</p>
-                <p>البنك: Ziraat Bankası</p>
-                <p>IBAN: TR32 0001 0000 0000 0123 456789</p>
+                {/* <p className="font-semibold">اسم الحساب: جمعية غرباء للأعمال الخيرية</p> */}
+                <p>رقم الحساب: 0400</p>
+                <p>شركة اطلنتس</p>
+                <p></p>
               </div>
               <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
                 <p className="arabic-text text-yellow-800 text-sm">

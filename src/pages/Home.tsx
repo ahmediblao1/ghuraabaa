@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   const stats = [
     { number: '2,500+', label: 'مستفيد', icon: 'fas fa-users' },
-    { number: '150+', label: 'عضو نشط', icon: 'fas fa-user-friends' },
-    { number: '50+', label: 'مشروع', icon: 'fas fa-heart' },
+    { number: '50+', label: 'عضو نشط', icon: 'fas fa-user-friends' },
+    { number: '10+', label: 'مشروع', icon: 'fas fa-heart' },
     { number: '3', label: 'سنوات خبرة', icon: 'fas fa-calendar' },
   ];
 
@@ -43,7 +43,7 @@ const Home = () => {
     {
       name: 'أحمد الفلسطيني',
       text: 'الجمعية تقوم بعمل رائع ومنظم، نشعر بالأمان والاطمئنان عندما نتعامل معهم',
-      location: 'خانيونس'
+      location: 'غزة'
     },
     {
       name: 'فاطمة عبدالله',

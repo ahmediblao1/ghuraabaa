@@ -12,17 +12,17 @@ const Activities = () => {
   const activities = [
     {
       id: 1,
-      title: 'توزيع وجبات الإفطار الساخنة',
+      title: 'توزيع الوجبات  الساخنة',
       category: 'الطعام',
-      date: '22 ديسمبر 2024',
+      date: ' مايو 2025',
       location: 'مخيم جباليا، غزة',
       beneficiaries: 250,
       description: 'توزيع وجبات إفطار ساخنة للأسر المحتاجة في مخيم جباليا، تضمنت الوجبات الفول والفلافل والخبز والشاي.',
       image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop',
       gallery: [
-        'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&h=300&fit=crop',
-        'https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?w=400&h=300&fit=crop',
-        'https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=300&fit=crop'
+        'src/pages/102.jpg',
+        'src/pages/101.jpg',
+        'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop'
       ]
     },
     {
@@ -36,8 +36,8 @@ const Activities = () => {
       image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&h=400&fit=crop',
       gallery: [
         'https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&h=300&fit=crop',
-        'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop',
-        'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=400&h=300&fit=crop'
+        'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop',
+        'src/pages/201.jpg',
       ]
     },
     {
@@ -48,58 +48,29 @@ const Activities = () => {
       location: 'رفح، غزة',
       beneficiaries: 120,
       description: 'توزيع أدوية أساسية للمرضى المزمنين وكبار السن، شملت أدوية السكري والضغط والقلب.',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
+      image:'src/pages/302.jpg',
       gallery: [
         'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop',
-        'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop',
-        'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop'
+        'src/pages/301.jpg',
+        'src/pages/302.jpg',
       ]
     },
-    {
-      id: 4,
-      title: 'ترميم منازل متضررة',
-      category: 'المأوى',
-      date: '10 ديسمبر 2024',
-      location: 'بيت حانون، غزة',
-      beneficiaries: 45,
-      description: 'إصلاح وترميم المنازل المتضررة من القصف، شمل إصلاح الأسقف والنوافذ والأبواب.',
-      image: 'https://images.unsplash.com/photo-1566230763020-b0b4970c58b1?w=600&h=400&fit=crop',
-      gallery: [
-        'https://images.unsplash.com/photo-1566230763020-b0b4970c58b1?w=400&h=300&fit=crop',
-        'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop',
-        'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=300&fit=crop'
-      ]
-    },
-    {
-      id: 5,
-      title: 'حملة توزيع مواد غذائية',
-      category: 'الطعام',
-      date: '8 ديسمبر 2024',
-      location: 'غزة المدينة',
-      beneficiaries: 300,
-      description: 'توزيع سلال غذائية شاملة تكفي لأسرة من 6 أفراد لمدة شهر، تضمنت الأرز والسكر والزيت والمعلبات.',
-      image: 'https://images.unsplash.com/photo-1593113616828-6f22bce73819?w=600&h=400&fit=crop',
-      gallery: [
-        'https://images.unsplash.com/photo-1593113616828-6f22bce73819?w=400&h=300&fit=crop',
-        'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop',
-        'https://images.unsplash.com/photo-1609501676725-7186f0a51972?w=400&h=300&fit=crop'
-      ]
-    },
-    {
-      id: 6,
-      title: 'توزيع بطانيات وفرش شتوية',
-      category: 'الكساء',
-      date: '5 ديسمبر 2024',
-      location: 'دير البلح، غزة',
-      beneficiaries: 200,
-      description: 'توزيع بطانيات ثقيلة وفرش للتدفئة في فصل الشتاء، مع إعطاء أولوية للأسر النازحة.',
-      image: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=600&h=400&fit=crop',
-      gallery: [
-        'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400&h=300&fit=crop',
-        'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop',
-        'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop'
-      ]
-    }
+   
+    // {
+    //   id: 5,
+    //   title: 'حملة توزيع مواد غذائية',
+    //   category: 'الطعام',
+    //   date: '8 ديسمبر 2024',
+    //   location: 'غزة المدينة',
+    //   beneficiaries: 300,
+    //   description: 'توزيع سلال غذائية شاملة تكفي لأسرة من 6 أفراد لمدة شهر، تضمنت الأرز والسكر والزيت والمعلبات.',
+    //   image: 'https://images.unsplash.com/photo-1593113616828-6f22bce73819?w=600&h=400&fit=crop',
+    //   gallery: [
+    //     'https://images.unsplash.com/photo-1593113616828-6f22bce73819?w=400&h=300&fit=crop',
+    //     'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop',
+    //     'https://images.unsplash.com/photo-1609501676725-7186f0a51972?w=400&h=300&fit=crop'
+    //   ]
+    // },
   ];
 
   const filteredActivities = selectedFilter === 'الكل' 

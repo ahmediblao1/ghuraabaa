@@ -29,9 +29,7 @@ const Layout = ({ children }: LayoutProps) => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3 space-x-reverse">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
-                <i className="fas fa-mosque text-white text-lg"></i>
-              </div>
+              <img src="src/components/wh.jpg" alt="Logo" className="w-28 h-16" />
               <div className="arabic-heading">
                 <h1 className="text-xl font-bold text-primary">جمعية غرباء</h1>
                 <p className="text-xs text-gray-600">للأعمال الخيرية</p>
@@ -183,7 +181,7 @@ const Layout = ({ children }: LayoutProps) => {
           </div>
 
           <div className="border-t border-gray-700 mt-8 pt-8 text-center arabic-text text-gray-400">
-            <p>&copy; 2024 جمعية غرباء للأعمال الخيرية. جميع الحقوق محفوظة.</p>
+            <p>&copy; 2025 جمعية غرباء للأعمال الخيرية. جميع الحقوق محفوظة.</p>
           </div>
         </div>
       </footer>
