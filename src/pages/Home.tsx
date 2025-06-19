@@ -4,34 +4,34 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   const stats = [
-    { number: '550+', label: 'مستفيد', icon: 'fas fa-users' },
+    { number: '8+', label: 'مستفيد', icon: 'fas fa-users' },
     { number: '50+', label: 'عضو نشط', icon: 'fas fa-user-friends' },
-    { number: '5+', label: 'مشروع', icon: 'fas fa-heart' },
-    { number: '3', label: 'سنوات خبرة', icon: 'fas fa-calendar' },
+    { number: '1+', label: 'مشروع', icon: 'fas fa-heart' },
+    // { number: '1', label: 'سنوات خبرة', icon: 'fas fa-calendar' },
   ];
 
   const activities = [
-    {
-      title: 'توزيع الطعام',
-      description: 'توزيع وجبات طعام ساخنة للعائلات المحتاجة في غزة',
-      image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&h=250&fit=crop',
-      icon: 'fas fa-utensils',
-      date: '15 ديسمبر 2024'
-    },
-    {
-      title: 'كسوة الشتاء',
-      description: 'توزيع ملابس شتوية دافئة للأطفال والكبار',
-      image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&h=250&fit=crop',
-      icon: 'fas fa-tshirt',
-      date: '10 ديسمبر 2024'
-    },
-    {
-      title: 'المساعدات الطبية',
-      description: 'توفير الأدوية والمستلزمات الطبية الضرورية',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop',
-      icon: 'fas fa-pills',
-      date: '5 ديسمبر 2024'
-    },
+    // {
+    //   title: 'توزيع الطعام',
+    //   description: 'توزيع وجبات طعام ساخنة للعائلات المحتاجة في غزة',
+    //   image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&h=250&fit=crop',
+    //   icon: 'fas fa-utensils',
+    //   date: '15 ديسمبر 2024'
+    // },
+    // {
+    //   title: 'كسوة الشتاء',
+    //   description: 'توزيع ملابس شتوية دافئة للأطفال والكبار',
+    //   image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&h=250&fit=crop',
+    //   icon: 'fas fa-tshirt',
+    //   date: '10 ديسمبر 2024'
+    // },
+    // {
+    //   title: 'المساعدات الطبية',
+    //   description: 'توفير الأدوية والمستلزمات الطبية الضرورية',
+    //   image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop',
+    //   icon: 'fas fa-pills',
+    //   date: '5 ديسمبر 2024'
+    // },
   ];
 
   const testimonials = [
@@ -221,7 +221,7 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <div
                 key={index}
@@ -242,7 +242,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Featured Activities */}
+      {/* Featured Activities
       <section className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold arabic-heading text-primary mb-4">
@@ -291,7 +291,7 @@ const Home = () => {
             </Button>
           </Link>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
       <section className="bg-gray-50 py-16">
@@ -356,7 +356,7 @@ const Home = () => {
             >
               <i className="fab fa-whatsapp ml-2"></i>
               تطوع معنا
-            </a>905550208605?
+            </a>
           </div>
         </div>
       </section>

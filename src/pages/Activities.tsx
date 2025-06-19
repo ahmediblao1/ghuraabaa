@@ -2,59 +2,60 @@
 import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Activities = () => {
   const [selectedFilter, setSelectedFilter] = useState('الكل');
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const filters = ['الكل', 'الطعام', 'الكساء', 'المأوى', 'الطبية'];
+  // const filters = ['الكل', 'الطعام', 'الكساء', 'المأوى', 'الطبية'];
 
   const activities = [
-    {
-      id: 1,
-      title: 'توزيع الوجبات  الساخنة',
-      category: 'الطعام',
-      date: ' مايو 2025',
-      location: 'مخيم جباليا، غزة',
-      beneficiaries: 250,
-      description: 'توزيع وجبات إفطار ساخنة للأسر المحتاجة في مخيم جباليا، تضمنت الوجبات الفول والفلافل والخبز والشاي.',
-      image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop',
-      gallery: [
-        '/images/102.jpg',
-        '/images/101.jpg',
-        'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop'
-      ]
-    },
-    {
-      id: 2,
-      title: 'توزيع ملابس شتوية للأطفال',
-      category: 'الكساء',
-      date: '18 ديسمبر 2024',
-      location: 'خانيونس، غزة',
-      beneficiaries: 180,
-      description: 'حملة توزيع ملابس شتوية دافئة للأطفال الذين تتراوح أعمارهم بين 3-15 سنة، شملت معاطف وبلوفرات وأحذية.',
-      image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&h=400&fit=crop',
-      gallery: [
-        'https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&h=300&fit=crop',
-        'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop',
-        '/images/201.jpg',
-      ]
-    },
-    {
-      id: 3,
-      title: 'توفير الأدوية الأساسية',
-      category: 'الطبية',
-      date: '15 ديسمبر 2024',
-      location: 'رفح، غزة',
-      beneficiaries: 120,
-      description: 'توزيع أدوية أساسية للمرضى المزمنين وكبار السن، شملت أدوية السكري والضغط والقلب.',
-      image:'/images/302.jpg',
-      gallery: [
-        'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop',
-        '/images/301.jpg',
-        '/images/302.jpg',
-      ]
-    },
+    // {
+    //   id: 1,
+    //   title: 'توزيع الوجبات  الساخنة',
+    //   category: 'الطعام',
+    //   date: ' مايو 2025',
+    //   location: 'مخيم جباليا، غزة',
+    //   beneficiaries: 250,
+    //   description: 'توزيع وجبات إفطار ساخنة للأسر المحتاجة في مخيم جباليا، تضمنت الوجبات الفول والفلافل والخبز والشاي.',
+    //   image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop',
+    //   gallery: [
+    //     '/images/102.jpg',
+    //     '/images/101.jpg',
+    //     'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop'
+    //   ]
+    // },
+    // {
+    //   id: 2,
+    //   title: 'توزيع ملابس شتوية للأطفال',
+    //   category: 'الكساء',
+    //   date: '18 ديسمبر 2024',
+    //   location: 'خانيونس، غزة',
+    //   beneficiaries: 180,
+    //   description: 'حملة توزيع ملابس شتوية دافئة للأطفال الذين تتراوح أعمارهم بين 3-15 سنة، شملت معاطف وبلوفرات وأحذية.',
+    //   image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&h=400&fit=crop',
+    //   gallery: [
+    //     'https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&h=300&fit=crop',
+    //     'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop',
+    //     '/images/201.jpg',
+    //   ]
+    // },
+    // {
+    //   id: 3,
+    //   title: 'توفير الأدوية الأساسية',
+    //   category: 'الطبية',
+    //   date: '15 ديسمبر 2024',
+    //   location: 'رفح، غزة',
+    //   beneficiaries: 120,
+    //   description: 'توزيع أدوية أساسية للمرضى المزمنين وكبار السن، شملت أدوية السكري والضغط والقلب.',
+    //   image:'/images/302.jpg',
+    //   gallery: [
+    //     'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop',
+    //     '/images/301.jpg',
+    //     '/images/302.jpg',
+    //   ]
+    // },
    
     // {
     //   id: 5,
@@ -98,11 +99,12 @@ const Activities = () => {
       </div>
 
       {/* Statistics */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card className="charity-card text-center p-4">
           <CardContent className="pt-4">
             <div className="text-2xl font-bold text-primary arabic-heading mb-1">
-              {activities.length}
+              {/* {activities.length} */}
+              1
             </div>
             <div className="text-gray-600 arabic-text text-sm">مشروع منجز</div>
           </CardContent>
@@ -111,13 +113,14 @@ const Activities = () => {
         <Card className="charity-card text-center p-4">
           <CardContent className="pt-4">
             <div className="text-2xl font-bold text-secondary arabic-heading mb-1">
-              {activities.reduce((sum, activity) => sum + activity.beneficiaries, 0)}
+              {/* {activities.reduce((sum, activity) => sum + activity.beneficiaries, 0)} */}
+              8
             </div>
             <div className="text-gray-600 arabic-text text-sm">مستفيد</div>
           </CardContent>
         </Card>
         
-        <Card className="charity-card text-center p-4">
+        {/* <Card className="charity-card text-center p-4">
           <CardContent className="pt-4">
             <div className="text-2xl font-bold text-accent arabic-heading mb-1">
               {activities.filter(a => a.category === 'الطعام').length}
@@ -133,11 +136,11 @@ const Activities = () => {
             </div>
             <div className="text-gray-600 arabic-text text-sm">مشروع طبي</div>
           </CardContent>
-        </Card>
+        </Card> */}
       </div>
 
       {/* Filters */}
-      <Card className="charity-card">
+      {/* <Card className="charity-card">
         <CardContent className="p-6">
           <h3 className="text-lg font-bold arabic-heading text-primary mb-4">تصفية حسب النوع</h3>
           <div className="flex flex-wrap gap-3">
@@ -157,10 +160,62 @@ const Activities = () => {
             ))}
           </div>
         </CardContent>
-      </Card>
+      </Card> */}
+
+       {/* Video Section */}
+            <section className="container mx-auto px-4 py-16">
+              <div className="max-w-4xl mx-auto">
+                <div className="text-center mb-12">
+                  <h2 className="text-4xl md:text-5xl font-bold arabic-heading text-primary mb-4">
+                    شاهد أعمالنا
+                  </h2>
+                  <p className="text-xl arabic-text text-gray-600">
+                  تابع جهودنا في دعم أهل غزة 
+                  </p>
+                </div>
+                
+                <Card className="charity-card overflow-hidden">
+                  <CardContent className="p-0">
+                    <div className="relative aspect-video bg-gray-100">
+                      <iframe
+                        src="https://drive.google.com/file/d/1-hDoqJU_FKN8-xOTMoWjWPytgu2UPEn0/preview"
+                        className="w-full h-full"
+                        allow="autoplay"
+                        allowFullScreen
+                        title="فيديو جمعية غرباء للأعمال الخيرية"
+                      ></iframe>
+                    </div>
+                    
+                    <div className="p-6 text-center">
+                      <h3 className="text-2xl font-bold arabic-heading text-primary mb-3">
+                        رحلة العطاء والإنسانية
+                      </h3>
+                      <p className="arabic-text text-gray-700 leading-relaxed mb-4">
+                        شاهد كيف تصل مساعداتكم إلى المحتاجين في غزة، وتابع قصص الأمل والتضامن التي نسعى لتحقيقها معاً
+                      </p>
+                      
+                      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <Link to="/activities">
+                          <Button className="charity-button-primary">
+                            <i className="fas fa-eye ml-2"></i>
+                            شاهد المزيد من الأنشطة
+                          </Button>
+                        </Link>
+                        <Link to="/donate">
+                          <Button className="charity-button-secondary">
+                            <i className="fas fa-hand-holding-heart ml-2"></i>
+                            ساهم في المساعدة
+                          </Button>
+                        </Link>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </section>
 
       {/* Activities Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredActivities.map((activity) => (
           <Card key={activity.id} className="charity-card overflow-hidden group">
             <div className="relative overflow-hidden">
@@ -202,9 +257,9 @@ const Activities = () => {
                   </span>
                 </div>
               </div>
-              
+               */}
               {/* Photo Gallery */}
-              <div className="grid grid-cols-3 gap-2">
+              {/* <div className="grid grid-cols-3 gap-2">
                 {activity.gallery.map((photo, index) => (
                   <div key={index} className="relative overflow-hidden rounded-lg">
                     <img
@@ -219,17 +274,17 @@ const Activities = () => {
             </CardContent>
           </Card>
         ))}
-      </div>
+      </div> */}
 
       {/* No Results */}
-      {filteredActivities.length === 0 && (
+      {/* {filteredActivities.length === 0 && (
         <div className="text-center py-12">
           <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <i className="fas fa-search text-gray-400 text-2xl"></i>
           </div>
           <p className="arabic-text text-gray-500 text-lg">لا توجد أنشطة في هذا التصنيف</p>
         </div>
-      )}
+      )} */}
 
       {/* Call to Action */}
       <Card className="charity-card bg-gradient-to-r from-primary to-accent text-white">
