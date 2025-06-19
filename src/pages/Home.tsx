@@ -164,7 +164,7 @@ const Home = () => {
   <hr className="my-8 border-t-3 border-gradient-to-r from-blue-500 to-purple-500" />
 
   {/* Quran Verses */}
-  <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg text-center shadow-lg">
+  <div className="charity-gradient text-white p-8 rounded-lg text-center shadow-lg">
     <div className="text-2xl leading-loose font-medium">
       <p className="mb-4">
         يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ هَلۡ أَدُلُّكُمۡ عَلَىٰ تِجَٰرَةٖ تُنجِيكُم مِّنۡ عَذَابٍ أَلِيمٖ 
