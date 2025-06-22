@@ -22,7 +22,7 @@ const Donate = () => {
 
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  const presetAmounts = [10, 20, 30, 50, 100];
+  // const presetAmounts = [10, 20, 30, 50, 100];
 
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
@@ -197,7 +197,7 @@ ${formData.message ? `الرسالة: ${formData.message}` : ''}
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold arabic-heading text-gray-800">مبلغ التبرع</h3>
                 
-                <div className="grid grid-cols-3 gap-3">
+                {/* <div className="grid grid-cols-3 gap-3">
                   {presetAmounts.map((amount) => (
                     <Button
                       key={amount}
@@ -212,7 +212,7 @@ ${formData.message ? `الرسالة: ${formData.message}` : ''}
                       {amount} $
                     </Button>
                   ))}
-                </div>
+                </div> */}
 
                 <div>
                   <Label htmlFor="customAmount" className="arabic-text">مبلغ آخر (دولار)</Label>
@@ -272,8 +272,8 @@ ${formData.message ? `الرسالة: ${formData.message}` : ''}
                 <h3 className="text-lg font-semibold arabic-heading text-gray-800">طريقة الدفع *</h3>
                 <div className="grid grid-cols-1 gap-3">
                   {[
-                    { id: 'bank', label: 'تحويل بنكي', icon: 'fas fa-university' },
-                    { id: 'hand', label: 'تسليم يد بيد', icon: 'fas fa-hand-holding-usd' },
+                    // { id: 'bank', label: 'تحويل بنكي', icon: 'fas fa-university' },
+                    // { id: 'hand', label: 'تسليم يد بيد', icon: 'fas fa-hand-holding-usd' },
                     { id: 'whatsapp', label: 'واتساب (التواصل المباشر)', icon: 'fab fa-whatsapp' }
                   ].map((method) => (
                     <Button

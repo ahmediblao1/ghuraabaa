@@ -183,37 +183,7 @@ const Home = () => {
     </div>
   </div>
 </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <Card className="charity-card text-center p-6">
-              <CardContent className="pt-6">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <i className="fas fa-heart text-primary text-2xl"></i>
-                </div>
-                <h3 className="text-xl font-bold arabic-heading text-primary mb-2">الرحمة</h3>
-                <p className="arabic-text text-gray-600">نعمل بروح الرحمة والشفقة على إخواننا المحتاجين</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="charity-card text-center p-6">
-              <CardContent className="pt-6">
-                <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <i className="fas fa-hands-helping text-secondary text-2xl"></i>
-                </div>
-                <h3 className="text-xl font-bold arabic-heading text-secondary mb-2">التعاون</h3>
-                <p className="arabic-text text-gray-600">نؤمن بقوة التعاون والعمل الجماعي لتحقيق أهدافنا</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="charity-card text-center p-6">
-              <CardContent className="pt-6">
-                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <i className="fas fa-star text-accent text-2xl"></i>
-                </div>
-                <h3 className="text-xl font-bold arabic-heading text-accent mb-2">التميز</h3>
-                <p className="arabic-text text-gray-600">نسعى للتميز في تقديم خدماتنا وإيصال المساعدة</p>
-              </CardContent>
-            </Card>
-          </div>
+        
         </div>
       </section>
 

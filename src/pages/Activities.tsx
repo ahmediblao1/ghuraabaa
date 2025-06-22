@@ -163,56 +163,173 @@ const Activities = () => {
       </Card> */}
 
        {/* Video Section */}
-            <section className="container mx-auto px-4 py-16">
-              <div className="max-w-4xl mx-auto">
-                <div className="text-center mb-12">
-                  <h2 className="text-4xl md:text-5xl font-bold arabic-heading text-primary mb-4">
-                    شاهد أعمالنا
-                  </h2>
-                  <p className="text-xl arabic-text text-gray-600">
-                  تابع جهودنا في دعم أهل غزة 
-                  </p>
-                </div>
-                
-                <Card className="charity-card overflow-hidden">
-                  <CardContent className="p-0">
-                    <div className="relative aspect-video bg-gray-100">
-                      <iframe
-                        src="https://drive.google.com/file/d/1-hDoqJU_FKN8-xOTMoWjWPytgu2UPEn0/preview"
-                        className="w-full h-full"
-                        allow="autoplay"
-                        allowFullScreen
-                        title="فيديو مجموعة غرباء للأعمال الخيرية"
-                      ></iframe>
-                    </div>
-                    
-                    <div className="p-6 text-center">
-                      <h3 className="text-2xl font-bold arabic-heading text-primary mb-3">
-                        رحلة العطاء والإنسانية
-                      </h3>
-                      <p className="arabic-text text-gray-700 leading-relaxed mb-4">
-                        شاهد كيف تصل مساعداتكم إلى المحتاجين في غزة، وتابع قصص الأمل والتضامن التي نسعى لتحقيقها معاً
-                      </p>
-                      
-                      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <Link to="/activities">
-                          <Button className="charity-button-primary">
-                            <i className="fas fa-eye ml-2"></i>
-                            شاهد المزيد من الأنشطة
-                          </Button>
-                        </Link>
-                        <Link to="/donate">
-                          <Button className="charity-button-secondary">
-                            <i className="fas fa-hand-holding-heart ml-2"></i>
-                            ساهم في المساعدة
-                          </Button>
-                        </Link>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </section>
+           <section className="container mx-auto px-4 py-16">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center mb-12">
+      <h2 className="text-4xl md:text-5xl font-bold arabic-heading text-primary mb-4">
+        شاهد أعمالنا
+      </h2>
+      <p className="text-xl arabic-text text-gray-600">
+        تابع جهودنا في دعم أهل غزة 
+      </p>
+    </div>
+    
+    {/* Videos Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-8">
+      {/* Video 1 */}
+      <Card className="charity-card overflow-hidden">
+        <CardContent className="p-0">
+          <div className="relative aspect-video bg-gray-100">
+            <iframe
+              src="https://drive.google.com/file/d/1-hDoqJU_FKN8-xOTMoWjWPytgu2UPEn0/preview"
+              className="w-full h-full"
+              allow="autoplay"
+              allowFullScreen
+              title="فيديو مجموعة غرباء للأعمال الخيرية - 1"
+            ></iframe>
+          </div>
+          <div className="p-4 text-center">
+            <h3 className="text-lg font-bold arabic-heading text-primary mb-2">
+              رحلة العطاء والإنسانية
+            </h3>
+            <p className="arabic-text text-gray-700 text-sm leading-relaxed">
+              شاهد كيف تصل مساعداتكم إلى المحتاجين في غزة
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Video 2 - Replace with your second video URL */}
+      <Card className="charity-card overflow-hidden">
+        <CardContent className="p-0">
+          <div className="relative aspect-video bg-gray-100">
+            <iframe
+              src="/images/gz2.MP4"
+              className="w-full h-full"
+              allow="autoplay"
+              allowFullScreen
+              title="فيديو مجموعة غرباء للأعمال الخيرية - 2"
+            ></iframe>
+          </div>
+          <div className="p-4 text-center">
+            <h3 className="text-lg font-bold arabic-heading text-primary mb-2">
+              قصص الأمل والتضامن
+            </h3>
+            <p className="arabic-text text-gray-700 text-sm leading-relaxed">
+              تابع قصص الأمل والتضامن التي نسعى لتحقيقها معاً
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Video 3 - Replace with your third video URL */}
+      {/* <Card className="charity-card overflow-hidden">
+        <CardContent className="p-0">
+          <div className="relative aspect-video bg-gray-100">
+            <iframe
+              src="https://drive.google.com/file/d/YOUR_THIRD_VIDEO_ID/preview"
+              className="w-full h-full"
+              allow="autoplay"
+              allowFullScreen
+              title="فيديو مجموعة غرباء للأعمال الخيرية - 3"
+            ></iframe>
+          </div>
+          <div className="p-4 text-center">
+            <h3 className="text-lg font-bold arabic-heading text-primary mb-2">
+              المساعدات الإنسانية
+            </h3>
+            <p className="arabic-text text-gray-700 text-sm leading-relaxed">
+              شاهد توزيع المساعدات والدعم المقدم للأسر المحتاجة
+            </p>
+          </div>
+        </CardContent>
+      </Card> */}
+
+      {/* Video 4 - Replace with your fourth video URL */}
+      {/* <Card className="charity-card overflow-hidden">
+        <CardContent className="p-0">
+          <div className="relative aspect-video bg-gray-100">
+            <iframe
+              src="https://drive.google.com/file/d/YOUR_FOURTH_VIDEO_ID/preview"
+              className="w-full h-full"
+              allow="autoplay"
+              allowFullScreen
+              title="فيديو مجموعة غرباء للأعمال الخيرية - 4"
+            ></iframe>
+          </div>
+          <div className="p-4 text-center">
+            <h3 className="text-lg font-bold arabic-heading text-primary mb-2">
+              مبادرات التعليم
+            </h3>
+            <p className="arabic-text text-gray-700 text-sm leading-relaxed">
+              دعم التعليم وتوفير المستلزمات المدرسية للأطفال
+            </p>
+          </div>
+        </CardContent>
+      </Card> */}
+
+      {/* Video 5 - Replace with your fifth video URL */}
+      {/* <Card className="charity-card overflow-hidden">
+        <CardContent className="p-0">
+          <div className="relative aspect-video bg-gray-100">
+            <iframe
+              src="https://drive.google.com/file/d/YOUR_FIFTH_VIDEO_ID/preview"
+              className="w-full h-full"
+              allow="autoplay"
+              allowFullScreen
+              title="فيديو مجموعة غرباء للأعمال الخيرية - 5"
+            ></iframe>
+          </div>
+          <div className="p-4 text-center">
+            <h3 className="text-lg font-bold arabic-heading text-primary mb-2">
+              الرعاية الصحية
+            </h3>
+            <p className="arabic-text text-gray-700 text-sm leading-relaxed">
+              توفير الرعاية الصحية والدواء للمرضى والمحتاجين
+            </p>
+          </div>
+        </CardContent>
+      </Card> */}
+
+      {/* Video 6 - Replace with your sixth video URL */}
+      {/* <Card className="charity-card overflow-hidden">
+        <CardContent className="p-0">
+          <div className="relative aspect-video bg-gray-100">
+            <iframe
+              src="https://drive.google.com/file/d/YOUR_SIXTH_VIDEO_ID/preview"
+              className="w-full h-full"
+              allow="autoplay"
+              allowFullScreen
+              title="فيديو مجموعة غرباء للأعمال الخيرية - 6"
+            ></iframe>
+          </div>
+          <div className="p-4 text-center">
+            <h3 className="text-lg font-bold arabic-heading text-primary mb-2">
+              مشاريع الإغاثة
+            </h3>
+            <p className="arabic-text text-gray-700 text-sm leading-relaxed">
+              مشاريع الإغاثة الطارئة وتوفير المأوى الآمن
+            </p>
+          </div>
+        </CardContent>
+      </Card> */}
+    </div>
+
+    {/* Action Buttons */}
+    <div className="text-center">
+      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        
+        <Link to="/donate">
+          <Button className="charity-button-secondary">
+            <i className="fas fa-hand-holding-heart ml-2"></i>
+            ساهم في المساعدة
+          </Button>
+        </Link>
+      </div>
+    </div>
+    
+  </div>
+</section>
 
       {/* Activities Grid */}
       {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
