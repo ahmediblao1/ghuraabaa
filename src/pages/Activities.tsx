@@ -104,7 +104,7 @@ const Activities = () => {
           <CardContent className="pt-4">
             <div className="text-2xl font-bold text-primary arabic-heading mb-1">
               {/* {activities.length} */}
-              1
+              3+
             </div>
             <div className="text-gray-600 arabic-text text-sm">مشروع منجز</div>
           </CardContent>
@@ -114,7 +114,7 @@ const Activities = () => {
           <CardContent className="pt-4">
             <div className="text-2xl font-bold text-secondary arabic-heading mb-1">
               {/* {activities.reduce((sum, activity) => sum + activity.beneficiaries, 0)} */}
-              8
+              10+
             </div>
             <div className="text-gray-600 arabic-text text-sm">مستفيد</div>
           </CardContent>
@@ -223,11 +223,11 @@ const Activities = () => {
       </Card>
 
       {/* Video 3 - Replace with your third video URL */}
-      {/* <Card className="charity-card overflow-hidden">
+      <Card className="charity-card overflow-hidden">
         <CardContent className="p-0">
           <div className="relative aspect-video bg-gray-100">
             <iframe
-              src="https://drive.google.com/file/d/YOUR_THIRD_VIDEO_ID/preview"
+              src="/images/2025-6.MP4"
               className="w-full h-full"
               allow="autoplay"
               allowFullScreen
@@ -243,14 +243,14 @@ const Activities = () => {
             </p>
           </div>
         </CardContent>
-      </Card> */}
+      </Card>
 
       {/* Video 4 - Replace with your fourth video URL */}
-      {/* <Card className="charity-card overflow-hidden">
+      <Card className="charity-card overflow-hidden">
         <CardContent className="p-0">
           <div className="relative aspect-video bg-gray-100">
             <iframe
-              src="https://drive.google.com/file/d/YOUR_FOURTH_VIDEO_ID/preview"
+              src="/images/2025-7.MP4"
               className="w-full h-full"
               allow="autoplay"
               allowFullScreen
@@ -259,14 +259,14 @@ const Activities = () => {
           </div>
           <div className="p-4 text-center">
             <h3 className="text-lg font-bold arabic-heading text-primary mb-2">
-              مبادرات التعليم
+رحلة العطاء والإنسانية
             </h3>
             <p className="arabic-text text-gray-700 text-sm leading-relaxed">
-              دعم التعليم وتوفير المستلزمات المدرسية للأطفال
+شاهد كيف تصل مساعداتكم إلى المحتاجين في غزة
             </p>
           </div>
         </CardContent>
-      </Card> */}
+      </Card>
 
       {/* Video 5 - Replace with your fifth video URL */}
       {/* <Card className="charity-card overflow-hidden">
